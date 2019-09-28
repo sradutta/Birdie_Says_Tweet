@@ -34,15 +34,20 @@ tw-sidebar {
 	display: none;
 }
 
+tw-story{
+  background-color: white;
+  color: black;
+}
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript">var audio = document.createElement('audio');
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">/* var audio = document.createElement('audio');
 audio.src = 'http://www.azfo.org/SoundLibrary/MP3/370_Grosbeaks_Buntings/AZFO_NOCA_5_Deviche_012904.mp3';
 audio.loop = true;
-audio.play();
+audio.play(); */
 
 
 </script><tw-passagedata pid="1" name="Anamika" tags="" position="11,128" size="100,100">Five year old Anamika loves playing with the book, &lt;i&gt;Noisy Baby Animals&lt;/i&gt;. 
-&lt;img src=&quot;file:///Users/kuttush/Documents/Personal_Research_Development/Game_Based_Learning/Birdie_Says_Tweet/book.png&quot; width=&quot;300&quot; alt=&quot;Noisy Baby Animal Book Image&quot; class=&quot;center&quot;&gt;
+&lt;img src=&quot;https://sradigitallibrary.yolasite.com/resources/book.png&quot; width=&quot;300&quot; alt=&quot;Noisy Baby Animal Book Image&quot; class=&quot;center&quot;&gt;
 It belonged to her mother Anahita. You press a button, and the animals produce sound -- Dog says woof..woof; lion says roar..roar; the &lt;b&gt;Blue Birdie&lt;/b&gt; says tweet..tweet. What a beautiful blue bird with sparkling dark eyes. Anamika can easily imagine the bird flying and singing; she has seen old pictures and movies with birds in them. Alas! birds no long exits. 
 
 Anamika longs for a time-machine so that she could go back [[to the year 2019 -&gt; 2019]]. 
@@ -65,14 +70,14 @@ She needs you to join her on her adventure. Would you like to accompany her?
 Anamika being a five year old cannot calculate how many birds per year, on average, the USA was losing between 1970 to 2019. So, can you please help her with the [[answer -&gt;Answer]]? 
 
 </tw-passagedata><tw-passagedata pid="4" name="Answer" tags="" position="378,100" size="100,100">(set: $fans to (prompt: &quot;Your Answer:&quot;, &quot;Your Answer&quot;))(set: $score to 0)
-(if: $fans is &quot;60 million&quot;)[(set: $score +=1)&quot;Yaay.. $fname! You have the correct answer. Your current score is $score.&quot; &lt;img id=&quot;happyemoji&quot; src=&quot;file:///Users/kuttush/Documents/Personal_Research_Development/Game_Based_Learning/Birdie_Says_Tweet/happy_emoji.png&quot;, width=&quot;200&quot;, alt=&quot;happy emoji&quot;, title=&quot;Image from Pixabay&quot;&gt;](else: )[(set: $score -=1)&quot;Aww.. $fname! Your answer is not correct. Your current score is $score.&quot; &lt;img id=&quot;sademoji&quot; src=&quot;file:///Users/kuttush/Documents/Personal_Research_Development/Game_Based_Learning/Birdie_Says_Tweet/sad_emoji.png&quot;, width=&quot;200&quot;, alt=&quot;sad emoji&quot;, title=&quot;Image from Pixabay&quot;&gt;]
+(if: $fans is &quot;60 million&quot;)[(set: $score +=1)&quot;Yaay.. $fname! You have the correct answer. Your current score is $score.&quot; &lt;img id=&quot;happyemoji&quot; src=&quot;https://sradigitallibrary.yolasite.com/resources/happy_emoji.png&quot;, width=&quot;200&quot;, alt=&quot;happy emoji&quot;, title=&quot;Image from Pixabay&quot;&gt;](else: )[(set: $score -=1)&quot;Aww.. $fname! Your answer is not correct. Your current score is $score.&quot; &lt;img id=&quot;sademoji&quot; src=&quot;https://sradigitallibrary.yolasite.com/resources/sad_emoji.png&quot;, width=&quot;200&quot;, alt=&quot;sad emoji&quot;, title=&quot;Image from Pixabay&quot;&gt;]
 The USA lost 3 billion birds between 1970 to 2019, that is, on average,  about 60 million birds per year. Birds can die for various reasons but some of the human factors that contribute to their quick demise are habitat loss, scarcity of food and water, too much light and noise, collision with tall buildings, pets and scarcity of nest-building materials. 
 
 Anamika sets out to tackle each of the problems. Please help her in finding the solution [[keys]]
 
 
 
-</tw-passagedata><tw-passagedata pid="5" name="keys" tags="" position="497,98" size="100,100">As you enjoy the sound of the Mourning Dove, please choose the correct key to learn about the solution. 
+</tw-passagedata><tw-passagedata pid="5" name="keys" tags="" position="497,98" size="100,100">As you enjoy the sound of the White-Winged Dove, please choose the correct key to learn about the solution. 
 
 Birds die unnecessarily due to
  -- [[Too many windows]]
@@ -80,9 +85,9 @@ Birds die unnecessarily due to
  --[[Quit the game -&gt;Quit]]
  
  (set: $playerhaskey to false)
- &lt;audio src=&quot;http://www.azfo.org/SoundLibrary/MP3/180_Doves/AZFO_MODO_4_deviche_042804.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="6" name="No" tags="" position="300,350" size="100,100">Anamika is sad that you will not be able to join her. But, she understands your decision. 
+ &lt;audio src=&quot;http://www.azfo.org/SoundLibrary/MP3/180_Doves/AZFO_WWDO_5_deviche_042304.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="6" name="No" tags="" position="300,350" size="100,100">Anamika is sad that you will not be able to join her. But, she understands your decision. 
 
-END OF THE GAME</tw-passagedata><tw-passagedata pid="7" name="Too many windows" tags="" position="619,199" size="100,100">(set: $playerhaskey to true)
+END OF THE GAME</tw-passagedata><tw-passagedata pid="7" name="Too many windows" tags="" position="619,199" size="100,100">&lt;img src=&quot;https://sradigitallibrary.yolasite.com/resources/Cardinal.png&quot;, width=&quot;200&quot;, alt=&quot;bird-image&quot; class=&quot;center&quot;&gt;(set: $playerhaskey to true)
 (if: $playerhaskey)[(set: $score +=1)&quot;$fname, you have the correct answer. Your current score is $score.&quot;]
 
 The New York City &lt;a href=&quot;http://www.nycaudubon.org/&quot;&gt;Audobon&lt;/a&gt; estimates that between 90,000 and 230,000 birds die in building collisions in NYC. The collisions occur due to all the windows on such buildings. 
@@ -93,7 +98,7 @@ Collision against windows is not only a problem in big cities but also happens i
 
 Recently NYC proposed a bill to make buildings with &lt;a href=&quot;https://www.nbcnewyork.com/news/local/Proposed-NYC-Bill-Would-Make-New-Buildings-Use-Bird-Friendly-Glass-507944901.html&quot;&gt;bird-friendly glass&lt;/a&gt;
 
-[[Native]]</tw-passagedata><tw-passagedata pid="8" name="Too few windows" tags="" position="619,95" size="100,100">(if: $playerhaskey is false)[(set: $score -=1)&quot;$fname, your answer is not correct. Your current score is $score.&quot;]
+[[Native]]</tw-passagedata><tw-passagedata pid="8" name="Too few windows" tags="" position="619,95" size="100,100">&lt;img src=&quot;https://sradigitallibrary.yolasite.com/resources/Cardinal.png&quot;, width=&quot;200&quot;, alt=&quot;bird-image&quot; class=&quot;center&quot;&gt;(if: $playerhaskey is false)[(set: $score -=1)&quot;$fname, your answer is not correct. Your current score is $score.&quot;]
 
 The New York City &lt;a href=&quot;http://www.nycaudubon.org/&quot;&gt;Audobon&lt;/a&gt; estimates that between 90,000 and 230,000 birds die in building collisions in NYC. The collisions occur due to all the windows on such buildings. 
 
@@ -105,7 +110,8 @@ Recently NYC proposed a bill to make buildings with &lt;a href=&quot;https://www
 
 [[Native]]</tw-passagedata><tw-passagedata pid="9" name="Quit" tags="" position="382,348" size="100,100">Thank you for playing the game. 
 
-END OF THE GAME</tw-passagedata><tw-passagedata pid="10" name="Plant a Japanese Maple tree" tags="" position="924,201" size="100,100">(if: $playerhaskey is false)[$fname, you have chosen the wrong answer; (set: $score -=1)your score is $score.]
+END OF THE GAME</tw-passagedata><tw-passagedata pid="10" name="Plant a Japanese Maple tree" tags="" position="924,201" size="100,100">&lt;img src=&quot;https://sradigitallibrary.yolasite.com/resources/FemaleDowny1.jpg&quot;, width=&quot;200&quot;, alt=&quot;bird-image&quot; class=&quot;center&quot;&gt;(if: $playerhaskey is false)[$fname, you have chosen the wrong answer; (set: $score -=1)your score is $score.]
+
 Japanese Maple tree looks beautiful, especially in Fall, with its gorgeous ruby-red leaves. But, non-native plants and trees like Japanese Maple has fewer caterpillar and other insect population; they do not provide fruits, nuts or nectars that native birds and insects thrive on. On the other hand, &lt;a href=&quot;https://www.nrs.fs.fed.us/restoration/chestnut/&quot;&gt;American Chestnut tree&lt;/a&gt; is a source of food (nuts) to wildlives and lumber to humans. 
 
 &lt;a href=&quot;https://www.pnas.org/content/115/45/11549&quot;&gt;Researchers&lt;/a&gt; from University of Delaware and Smithsonian Migratory Bird Center has shown that yards dominated by non-native plants forced Carolina Chickadees to produce fewer young or forgo reproduction. 
@@ -114,9 +120,9 @@ Create a yard with native plants to help local wildlife. One can also put in non
 
 Even if you do not have a yard but you can still help wildlife by creating small gardens in your balcony or on window sills. National Wildlife Foundation (NWF) demonstrates &lt;a href=&quot;https://www.nwf.org/en/Magazines/National-Wildlife/1996/Turning-a-Small-Space-Into-a-Big-Attraction-for-Wildlife&quot;&gt; here&lt;/a&gt; how you can achieve that. 
 
-What is a native plant? Lady Bird Johnson Wildflower Center, the largest database of the US Native plants, has the&lt;a href=&quot;https://www.wildflower.org/expert/show.php?id=972&quot;&gt;answer&lt;/a&gt;. 
+What is a native plant? Lady Bird Johnson Wildflower Center, the largest database of the US Native plants, has the&lt;a href=&quot;https://www.wildflower.org/expert/show.php?id=972&quot;&gt; answer&lt;/a&gt;. 
 
-[[Yard]]</tw-passagedata><tw-passagedata pid="11" name="Plant an American Chestnut tree" tags="" position="923,98" size="100,100">(set: $playerhaskey to true)
+[[Yard]]</tw-passagedata><tw-passagedata pid="11" name="Plant an American Chestnut tree" tags="" position="923,98" size="100,100">&lt;img src=&quot;https://sradigitallibrary.yolasite.com/resources/FemaleDowny1.jpg&quot;, width=&quot;200&quot;, alt=&quot;bird-image&quot; class=&quot;center&quot;&gt;(set: $playerhaskey to true)
 (if: $playerhaskey)[(set: $score +=1)&quot;$fname, you have the correct answer. Your current score is $score.&quot;]
 
 Japanese Maple tree looks beautiful, especially in Fall, with its gorgeous ruby-red leaves. But, non-native plants and trees like Japanese Maple has fewer caterpillar and other insect population; they do not provide fruits, nuts or nectars that native birds and insects thrive on. On the other hand, &lt;a href=&quot;https://www.nrs.fs.fed.us/restoration/chestnut/&quot;&gt;American Chestnut tree&lt;/a&gt; is a source of food (nuts) to wildlives and lumber to humans. 
@@ -127,7 +133,7 @@ Create a yard with native plants to help local wildlife. One can also put in non
 
 Even if you do not have a yard but you can still help wildlife by creating small gardens in your balcony or on window sills. National Wildlife Foundation (NWF) demonstrates &lt;a href=&quot;https://www.nwf.org/en/Magazines/National-Wildlife/1996/Turning-a-Small-Space-Into-a-Big-Attraction-for-Wildlife&quot;&gt; here&lt;/a&gt; how you can achieve that. 
 
-What is a native plant? Lady Bird Johnson Wildflower Center, the largest database of the US Native plants, has the&lt;a href=&quot;https://www.wildflower.org/expert/show.php?id=972&quot;&gt;answer&lt;/a&gt;. 
+What is a native plant? Lady Bird Johnson Wildflower Center, the largest database of the US Native plants, has the&lt;a href=&quot;https://www.wildflower.org/expert/show.php?id=972&quot;&gt; answer&lt;/a&gt;. 
 
 [[Yard]]</tw-passagedata><tw-passagedata pid="12" name="Yard" tags="" position="1042,135" size="100,100">Which one should you create to help the birds? Enjoying the sound of the ruby-throated hummingbird? 
 
@@ -142,7 +148,7 @@ What is a native plant? Lady Bird Johnson Wildflower Center, the largest databas
 [[Plant an American Chestnut tree]]
 [[Quit the game -&gt;Quit]]
 
-&lt;audio src=&quot;http://www.azfo.org/SoundLibrary/MP3/238_Woodpeckers/AZFO_HAWO_CALLS_2_deviche_061804.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="14" name="Yard with too many weeds" tags="" position="1156,200" size="100,100">(set: $playerhaskey to true)(if: $playerhaskey is true)[$fname, you have chosen the correct answer. (set: $score +=1)Your score is $score.]
+&lt;audio src=&quot;http://www.azfo.org/SoundLibrary/MP3/238_Woodpeckers/AZFO_HAWO_CALLS_2_deviche_061804.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="14" name="Yard with too many weeds" tags="" position="1156,200" size="100,100">&lt;img src=&quot;https://sradigitallibrary.yolasite.com/resources/Dove.png&quot;, width=&quot;200&quot;, alt=&quot;bird-image&quot; class=&quot;center&quot;&gt;(set: $playerhaskey to true)(if: $playerhaskey is true)[$fname, you have chosen the correct answer. (set: $score +=1)Your score is $score.]
 
 A clean and manicured yard is pleasing to eyes but detrimental for local wildlives. Both birds and insects need nesting materials, places to hide and build their homes. 
 
@@ -158,13 +164,13 @@ It does not mean that you cannot have a clean yard. But, create a balance -- por
 
 After all, we would not really like to have a world without birds and butterflies. 
 
-[[Animals]]</tw-passagedata><tw-passagedata pid="15" name="Clean yard" tags="" position="1155,97" size="100,100">(if: $playerhaskey is false)[$fname, you have chosen the wrong answer. (set: $score -=1)Your score is $score.]
+[[Animals]]</tw-passagedata><tw-passagedata pid="15" name="Clean yard" tags="" position="1155,97" size="100,100">&lt;img src=&quot;https://sradigitallibrary.yolasite.com/resources/Dove.png&quot;, width=&quot;200&quot;, alt=&quot;bird-image&quot; class=&quot;center&quot;&gt;(if: $playerhaskey is false)[$fname, you have chosen the wrong answer. (set: $score -=1)Your score is $score.]
 
 A clean and manicured yard is pleasing to eyes but detrimental for local wildlives. Both birds and insects need nesting materials, places to hide and build their homes. 
 
 Birds build nests in the cavities of dead trees; such cavities also become breeding ground of insects and which in turn attracts woodpeckers. 
 
-Dead stems become nesting material for birds. Insects burrow into such stems to survive rough weather. 
+Dead stems become nesting material for birds. Insects burrow into such stems to survive rough weather. Insects are a major food-source for birds.
 
 Dead leaves, rotten woods and compost become food and nesting materials for both birds and insects. Seed husks, dead flower-heads with seeds inside, woolly, white threa-like substance left behind seeds of native flowering plants like Butterfly-weed are all used by birds for food or making nests. Fungus and moss grow on logs of wood, and they in turn help birds. For example, native hummingbirds use moss and seed husks of butterfly-weed plants to build their nests. 
 
@@ -181,7 +187,7 @@ After all, we would not really like to have a world without birds and butterflie
 [[Quit the game -&gt;Quit]]
 
 (set: $playerhaskey to false)
-&lt;audio src=&quot;http://www.azfo.org/SoundLibrary/MP3/290_Wrens_Kinglets_Gnatcatchers/AZFO_CACW_3_deviche_031002.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="17" name="Dogs" tags="" position="1080,470" size="100,100">(set: $playerhaskey to true)(if: $playerhaskey)[(set: $score +=1)$fname, good job! you have the correct answer. Your current score is $score]
+&lt;audio src=&quot;http://www.azfo.org/SoundLibrary/MP3/290_Wrens_Kinglets_Gnatcatchers/AZFO_CACW_3_deviche_031002.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="17" name="Dogs" tags="" position="1080,470" size="100,100">&lt;img src=&quot;https://sradigitallibrary.yolasite.com/resources/FemaleCardinal1.jpg&quot;, width=&quot;200&quot;, alt=&quot;bird-image&quot; class=&quot;center&quot;&gt;(set: $playerhaskey to true)(if: $playerhaskey)[(set: $score +=1)$fname, good job! you have the correct answer. Your current score is $score]
 
 This was a tricky but bonus question. Either choice will give you a point because both dogs and cats can be dangerous to birds. 
 
@@ -193,7 +199,7 @@ It is highly recommended that cats be kept indoor all the time; that they are le
 
 This does not mean that cats only kill birds and dogs do not. Dogs also have the same hunting instinct. So, it is imperative to train &lt;a href=&quot;https://www.livescience.com/27330-dogs-disrupt-wildlife.html&quot;&gt;dogs&lt;/a&gt; so that they do not kill birds. 
 
-[[Last Key]]</tw-passagedata><tw-passagedata pid="18" name="Cats" tags="" position="1230,470" size="100,100">(set: $playerhaskey to true)(if: $playerhaskey)[(set: $score +=1)$fname, good job! you have the correct answer. Your current score is $score]
+[[Last Key]]</tw-passagedata><tw-passagedata pid="18" name="Cats" tags="" position="1230,470" size="100,100">&lt;img src=&quot;https://sradigitallibrary.yolasite.com/resources/FemaleCardinal1.jpg&quot;, width=&quot;200&quot;, alt=&quot;bird-image&quot; class=&quot;center&quot;&gt;(set: $playerhaskey to true)(if: $playerhaskey)[(set: $score +=1)$fname, good job! you have the correct answer. Your current score is $score]
 
 This was a tricky but bonus question. Either choice will give you a point because both dogs and cats can be dangerous to birds. 
 
@@ -212,13 +218,13 @@ This does not mean that cats only kill birds and dogs do not. Dogs also have the
 [[Quit the game -&gt;Quit]]
 
 (set: $playerhaskey to false)
-&lt;audio src=&quot;http://www.azfo.org/SoundLibrary/MP3/140_Birds_of_Prey/AZFO_RSHA_deviche_031503.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="20" name="The Beginning" tags="" position="12,0" size="100,100">&lt;img src=&quot;file:///Users/kuttush/Documents/Personal_Research_Development/Game_Based_Learning/Birdie_Says_Tweet/blue_bird.png&quot; width=&quot;300&quot; alt=&quot;Blue BirdImage&quot; class=&quot;center&quot;&gt;
+&lt;audio src=&quot;http://www.azfo.org/SoundLibrary/MP3/140_Birds_of_Prey/AZFO_RSHA_deviche_031503.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="20" name="The Beginning" tags="" position="12,0" size="100,100">&lt;img src=&quot;https://sradigitallibrary.yolasite.com/resources/Crow.JPG&quot; width=&quot;300&quot; alt=&quot;Raven&quot; class=&quot;center&quot;&gt;
 
 Title: Birdie Says Tweet 
 Game By: Srabasti Dutta
 Coding By: Srabasti Dutta
-Created On: September 28, 2019
-Genre: Educational, Informative
+Created On: September 28, 2019, my first ever game
+Genre: Educational, Informative, self-knowledge-test
 
 Copyright protected. Please do not use or distribute without permission. You can contact Srabasti by &lt;a href=&quot;mailto:srabastidutta@gmail.com&quot;&gt;email&lt;/a&gt;
 
@@ -226,8 +232,9 @@ Acknowledgements:
 My Instructor: &lt;a href=&quot;https://ryanstraight.com/&quot;&gt;Professor Ryan Straight&lt;/a&gt;
 Emojis: &lt;a href=&quot;pixabay.com&quot;&gt;Pixabay&lt;/a&gt;
 Bird Sounds: &lt;a href=&quot;http://www.azfo.org/index.html&quot;&gt;Arizona Field Ornithologists&lt;/a&gt;
+Book Cover: Noisy Baby Animals by tiger tales
 
-To play the game, click on the &lt;b&gt;BLUE LINKS&lt;/b&gt; at the end of each page. 
+To play the game, click on the &lt;b&gt;BLUE LINKS&lt;/b&gt; at the end of each page. If any prompt appears, type in your answer. Click on the choice that you think is correct. 
 
 [[Enter -&gt;Anamika]]</tw-passagedata><tw-passagedata pid="21" name="Light" tags="" position="1005,770" size="100,100">(set: $playerhaskey to true)(if: $playerhaskey)[(set: $score += 1)$fname, you have the correct answer. Your current score is $score]
 
@@ -239,13 +246,13 @@ How light and darkness affects birds is still an ongoing study. One of the theor
 
 How light and darkness affects birds is still an ongoing study. One of the theories is that bright light affects &lt;a href=&quot;https://www.audubon.org/news/we-finally-know-how-bright-lights-affect-birds-flying-night&quot;&gt;migratory birds&lt;/a&gt;. Birds travel and maintain their daily routine based on magnetic fields and celestial cues. Too much light can make birds think that a day is dawning, when it is actually night, and lead to fatal &lt;a href=&quot;https://www.darksky.org/light-pollution-poses-threat-to-migrating-birds/&quot;&gt;consequences&lt;/a&gt;. 
 
-[[The Final Chapter]]</tw-passagedata><tw-passagedata pid="23" name="The Final Chapter" tags="" position="1005,920" size="100,100">Anamika thanks you for being such a sincere companion. She learned a lot with your help. She learned that birds are truly unique creatures who keep insect population at bay. Too many insects would wreck havoc on our forests, yards and food-crops. Birds restore nature, prairie, forests and woods by spreading around seeds. They are also great &lt;a href=&quot;https://youtu.be/W7QZnwKqopo&quot;&gt;dancers&lt;/a&gt;, singers, &lt;a href=&quot;https://youtu.be/XjAcyTXRunY&quot;&gt;mimics&lt;/a&gt; and beautiful to look at. 
+[[The Final Chapter]]</tw-passagedata><tw-passagedata pid="23" name="The Final Chapter" tags="" position="1005,920" size="100,100">&lt;img src=&quot;https://sradigitallibrary.yolasite.com/resources/queensnake.jpg&quot;, width=&quot;200&quot;, alt=&quot;snake-image&quot; class=&quot;center&quot;&gt;Anamika thanks you for being such a sincere companion. She learned a lot with your help. She learned that birds are truly unique creatures who keep insect population at bay. Too many insects would wreck havoc on our forests, yards and food-crops. Birds restore nature, prairie, forests and woods by spreading around seeds. They are also great &lt;a href=&quot;https://youtu.be/W7QZnwKqopo&quot;&gt;dancers&lt;/a&gt;, singers, &lt;a href=&quot;https://youtu.be/XjAcyTXRunY&quot;&gt;mimics&lt;/a&gt; and beautiful to look at. 
 
 So, make your yard and balcony a bird-friendly place. Let a little portion of your yard go wild. Let some leaves, twigs and branches lie around. Dig in in few native plants. Native herbaceous plants can also be grown in pots. Put up a bird-bath. Hang out a bird-feeder. Birds need food and water, especially in rough weather like harsh winter or peak summer. Support organizations that saves/protects birds. 
 
 With birds will come squirrels, chipmunks, bees, butterflies, groundhog, raccoons, feral cats and even snakes, deers and bears in some places. Bears come to steal from bird-feeders. Cats and snakes come for rodents and birds. Deers also come in search of food. And a whole wildlife/zoo springs up at your backyard. And, the world becomes a little more beautiful place to live in. 
 
-Your final score is $score. (if: $score is &gt;= 5)[You have achieved a distinguished star.](else-if: $score is &gt;=4 and $score is &lt; 5)[You have achieved a proficient star.](else-if: $score is &gt;=3 and $score is &lt; 4)[You have still some more learning to do. You have achieved a developing star.](else-if: $score is &gt;= 2 and $score is &lt; 3)[Keep on learning. You have achieved a beginner star.](else-if: $score &lt; 1)[Birds can teach you a lot. So, do not give up your flight.]</tw-passagedata></tw-storydata>
+&lt;b&gt;Your final score is $score&lt;/b&gt;. (if: $score is &gt;= 5)[&lt;b&gt;You have achieved a distinguished star&lt;/b&gt;.](else-if: $score is &gt;=4 and $score is &lt; 5)[&lt;b&gt;You have achieved a proficient star&lt;/b&gt;.](else-if: $score is &gt;=3 and $score is &lt; 4)[&lt;b&gt;You have still some more learning to do. You have achieved a developing star&lt;/b&gt;.](else-if: $score is &gt;= 2 and $score is &lt; 3)[&lt;b&gt;Keep on learning. You have achieved a beginner star&lt;/b&gt;.](else-if: $score &lt; 1)[Birds can teach you a lot. So, do not give up your flight (towards learning).]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
